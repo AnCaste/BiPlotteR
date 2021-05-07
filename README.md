@@ -54,13 +54,13 @@ filled with parameters (e.g., types, species, treatments, etc.) useful
 for samples classification into groups. In this way, all the points
 referring to samples sharing the same properties will have the same
 color in the biplot. Variable values are listed starting from the third
-column onwards. Here, the column headers should contain the name of the
-related feature. These names will be displayed next to the corresponding
-loading vector in the biplot. As an example, the `BiPlotteR` package
-offers you the `Iris_4BPLTR` data frame as a template. This is an
-adaptation of the iris dataset (embedded in the “datasets” R-package) to
-the needs of the BiPlotteR functions. You can load it into the R
-environment using the following code line:
+column onwards. Here, the column headers should be filled with the name
+of the related feature. These names will be displayed next to the
+corresponding loading vector in the biplot. As an example, the
+`BiPlotteR` package offers you the `Iris_4BPLTR` data frame as a
+template. This is an adaptation of the “iris” dataset (embedded in the
+“datasets” R-package) to the needs of the BiPlotteR functions. You can
+load it into the R environment using the following code line:
 
 ``` r
 data("Iris_4BPLTR")
@@ -221,17 +221,18 @@ Here you can explore the content of the Iris\_4BPLTR dataset:
 |      149      | virginica  |     6.2      |     3.4     |     5.4      |     2.3     |
 |      150      | virginica  |     5.9      |     3.0     |     5.1      |     1.8     |
 
-As you can see, the first column offers a number codification for the
-iris samples; more in general, the elements in the first column will
-appear as point annotations in the biplot when using the `Biplot 3D` and
-`Biplot 2D` functions. The second column is dedicated to a-priori
-information about your samples; in this particular case, iris species
-are reported. When using the `Biplot 3D` and `Biplot 2D` functions,
-points referred to samples that have the same value in the second column
-of the dataset (the name of the species in this case) will be displayed
-with the same color in the biplot. This might help you to interpret the
-PCA output in light to your a-priori information. As previously
-mentioned, features values are listed from the third column onwards.
+As you can see, the first column contains a numerical codification of
+the iris samples; the elements in the first column will appear as point
+annotations in the biplot when using the `Biplot 3D` and `Biplot 2D`
+functions. The second column is dedicated to a priori information about
+your samples; in the “iris” dtaset, iris species (i.e. setosa,
+versicolor, virginica) are reported. When using the `Biplot 3D` and
+`Biplot 2D` functions, points referred to samples that have the same
+value in the second column of the dataset (the name of the species in
+this case) will be displayed with the same color in the biplot. This
+might help you to interpret the PCA output in light to your a priori
+information. As previously mentioned, features values are listed from
+the third column onwards.
 
 ## The functions in the BiPlotteR package: Biplot3D
 
@@ -257,12 +258,12 @@ code line is used.
 Biplot3D(Iris_4BPLTR,load.filter=0.2)
 ```
 
-By definition, the modules of loading vectors do not exceed 1. However,
-their lenght appear be too small if compared to scatter point
-coordinates on the principal component axis. You can than decide to
-introduce an artificial magnification of loading vectors. More properly,
-you can do it either by specifying a definite magnification factor,
-e.g. 2 as in the example below:
+By definition, the modules of loading vectors cannot exceed 1. However,
+their length appears to be too small if compared to scatter point
+coordinates on the principal component axis. If needed, you can magnify
+the loading vector modules. More properly, you can do it either by
+specifying a proper magnification factor, e.g. 2 as in the example
+below:
 
 ``` r
 Biplot3D(Iris_4BPLTR,mag.fact=2)
@@ -285,12 +286,12 @@ to the two principal components (PC) indicated by the user. Similarly to
 data matrix. Analogously to `Biplot 3D`, you can decide to scale your
 data, to limit the number of the loading vectors in the biplot and to
 ask for loading vector modules amplification to increase the biplot
-intelligibility. (see above or the `Biplot 2D` help file for further
-details). Furthermore, the `Biplot 2D` allows you to decide which
-principal components will be displayed on the x and y axis. For example,
-if you want to put the PC2 on the x axis and the PC3 on the y axis, you
-have to specify the corresponding PCx and PCy values in the `Biplot 2D`,
-as shown in the example below:
+intelligibility. (see above or check the `Biplot 2D` help file for
+further details). Furthermore, the `Biplot 2D` allows you to decide
+which principal components will be displayed on the x and y axis. For
+example, if you want to put the PC2 on the x axis and the PC3 on the y
+axis, you have to specify the corresponding PCx and PCy values in the
+`Biplot 2D`, as shown in the example below:
 
 ``` r
 data("Iris_4BPLTR")
@@ -307,7 +308,7 @@ height of each bar shows the variance explained by the corresponding
 principal component. The screeplot returned by the `ScreePlot` function
 refers to the Principal Component Analysis performed on centered data.
 If scaling is needed, you have to specify it by setting `scaling="YES"`
-in the function input, as shown in the example below:
+in the function input, as shown below:
 
 ``` r
 data("Iris_4BPLTR")
