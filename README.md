@@ -2,7 +2,7 @@
 # Getting Started with BiPlotteR
 
 <center>
-<img src="man/figures/Cover.png" width=350 />
+<img src="man/figures/Cover.png" width=600 />
 </center>
 
 How many times did you wish to dive into a three-dimensional biplot,
