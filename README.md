@@ -1,11 +1,13 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # Getting Started with BiPlotteR
+
+<center>
+<img src="man/figures/Cover.jpg" width=350 />
+</center>
 
 How many times did you wish to dive into a three-dimensional biplot,
 enjoying the dispersion of your data sample like in a sky full of stars?
-The `BiPlotteR` R-package makes it possible! BiPlotteR is based on the
+The `BiPlotteR` R-package makes it possible! `BiPlotteR` is based on the
 `Plotly` interactive graphical interface and allows you to create
 captivating 2D and 3D biplots after performing the Principal Component
 Analysis using the prcomp function available in the “stats” R package.
@@ -271,6 +273,9 @@ or asking for an automatic magnification as follows:
 Biplot3D(Iris_4BPLTR,mag.fact="AUTO")
 ```
 
+[Here](https://chart-studio.plotly.com/~AnCaste/13/#/) you can explore
+an example of the interactive output of the `Biplot 3D` function.
+
 ## The functions in the BiPlotteR package: Biplot2D
 
 `Biplot 2D` generates an interactive three-dimensional biplot referred
@@ -291,6 +296,9 @@ data("Iris_4BPLTR")
 Biplot2D(Iris_4BPLTR,scaling="NO",PCx=2,PCy=3,load.filter=0,mag.fact="NO")
 ```
 
+[Here](https://chart-studio.plotly.com/~AnCaste/15) you can explore an
+example of the `interactive output of the Biplot 2D` function .
+
 ## The functions in the BiPlotteR package: ScreePlot
 
 `ScreePlot` generates an interactive two-dimensional bar chart. The
@@ -304,3 +312,6 @@ in the function input, as shown in the example below:
 data("Iris_4BPLTR")
 ScreePlot(Iris_4BPLTR,scaling="NO")
 ```
+
+[Here](https://chart-studio.plotly.com/~AnCaste/17/#/) you can explore
+an example of the interactive output of the `ScreePlot` function.
