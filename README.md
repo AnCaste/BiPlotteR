@@ -54,7 +54,7 @@ filled with parameters (e.g., types, species, treatments, etc.) useful
 for samples classification into groups. In this way, all the points
 referring to samples sharing the same properties will have the same
 color in the biplot. Variable values are listed starting from the third
-column onwards. Here, column headers should contain the name of the
+column onwards. Here, the column headers should contain the name of the
 related feature. These names will be displayed next to the corresponding
 loading vector in the biplot. As an example, the `BiPlotteR` package
 offers you the `Iris_4BPLTR` data frame as a template. This is an
