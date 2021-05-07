@@ -6,7 +6,7 @@ enjoying the dispersion of your data sample like in a sky full of stars?
 The `BiPlotteR` R-package makes it possible! `BiPlotteR` is based on the
 `Plotly` interactive graphical interface and allows you to create
 captivating 2D and 3D biplots after performing the Principal Component
-Analysis using the prcomp function available in the “stats” R package.
+Analysis using the `prcomp` function provided by the `stats` R package.
 
 <center>
 <img src="man/figures/Cover.png" width=600 />
