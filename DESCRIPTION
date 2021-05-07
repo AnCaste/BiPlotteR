@@ -17,3 +17,7 @@ Depends:
 RoxygenNote: 7.1.1
 URL: https://github.com/AnCaste/BiPlotteR
 BugReports: https://github.com/AnCaste/BiPlotteR/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

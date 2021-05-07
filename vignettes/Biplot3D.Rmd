@@ -1,0 +1,30 @@
+---
+title: "Biplot3D"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Biplot3D}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+```{r setup}
+library(BiPlotteR)
+```
+
+
+The `Biplot 3D` function allows you to generate astonishing 3D biplots showing the results of Principal Components Analyisis performed on your dataset.
+Here you can explore the `Biplot 3D` interactive graphical output powered by the `plotly` R package. The output refers to the famous "iris" dataset introduced by the biologist Ronald Fisher showing sepal and petal widths and lengths for 50 samples from each of three species of Iris, namely *setosa*, *virginica* and *versicolor*.
+Here you can explore an example of the `Biplot 3D` graphical output.
+
+```{r echo=FALSE}
+data("Iris_4BPLTR")
+Biplot3D(Iris_4BPLTR)
+```
