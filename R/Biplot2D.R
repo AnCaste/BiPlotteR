@@ -15,7 +15,7 @@
 #' point in the biplot. Furthermore, the second column has to be filled with
 #' parameters (e.g., types, species, treatments, etc.) useful for samples
 #' classification into groups. In this way, all the points referring to
-#' samples sharing the same properties will have the same color in the
+#' samples sharing the same properties will be displayed with the same color in the
 #' biplot. Variable values are listed starting from the third column
 #' onwards. Here, column headers should contain the name of the related feature.
 #' These names will be displayed next to the corresponding loading vector in the
@@ -35,7 +35,7 @@
 #' mag.fact=2). If no amplification is required, set mag.fact="NO". The latter
 #' choice is set as default.
 #'
-#' @return The two-dimensional interactive biplot as a Plotly object.
+#' @return A two-dimensional interactive biplot as a Plotly object.
 #'
 #' @import plotly
 #'

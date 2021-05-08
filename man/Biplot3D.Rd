@@ -36,7 +36,7 @@ mag.fact=2). If no amplification is required, set mag.fact="NO". The latter
 choice is set as default.}
 }
 \value{
-The three-dimensional interactive biplot as a Plotly object.
+A three-dimensional interactive biplot as a Plotly object.
 }
 \description{
 Generates an interactive three-dimensional biplot referred

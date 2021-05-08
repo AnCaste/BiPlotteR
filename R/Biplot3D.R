@@ -31,7 +31,7 @@
 #' mag.fact=2). If no amplification is required, set mag.fact="NO". The latter
 #' choice is set as default.
 #'
-#' @return The three-dimensional interactive biplot as a Plotly object.
+#' @return A three-dimensional interactive biplot as a Plotly object.
 #'
 #' @import plotly
 #'
